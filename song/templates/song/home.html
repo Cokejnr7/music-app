@@ -1,0 +1,17 @@
+{% extends 'base.html' %} 
+
+{% block title %}home{% endblock title %}
+
+{% block content %}
+
+  {% for song in songs %}
+  <main>            
+    <h3>{{song.title}}</h3>
+    <small>{{song.duration}}</small>
+    <img src={{song.cover_image.url}}>
+    <audio controls class="audi"><source src={{song.audio_file.url}} ></source></audio>
+  </main>
+
+  {% endfor %}
+
+{% endblock content %}

@@ -1,0 +1,149 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* general style */
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+small{
+    color: red;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #1E1E1E;
+    font-family: 'Quicksand', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+main{
+    left: 10%;
+    position: relative;
+    width: 90%;
+}
+
+/* end general style */
+
+/* navigation component */
+
+nav{
+    padding-top: 28.1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    gap: 20px;
+}
+
+nav>ul{
+    background: #1A1E1F;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.first-nav{
+    width: 52px;
+    height: 230px;
+}
+
+.second-nav{
+    width: 52px;
+    height: 127px;
+}
+
+.logo-container{
+    position: relative;
+    width: 52px;
+    height: 127px;
+}
+
+.second-logo{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+/* end navigation component */
+
+
+
+
+/* collection page */
+
+.collection-views>a{
+    padding: 10px;
+    color:#EFEEE0;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    border: 2px solid  rgba(255, 255, 255, 0.25);;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.collection-views{
+    display: flex;
+    align-items: center;
+    gap: 9.5px;
+}
+
+.collection-main{
+    display: flex;
+    flex-direction: column;
+    padding-top: 28.1px;
+    gap: 23px;
+}
+
+.search-collections{
+    width: 1122px;
+    height: 73px;
+    background-color: #1D2123;
+    outline: none;
+    border: none;
+    border-radius: 32px;
+    padding-left: 50px;
+    color: rgba(255, 255, 255, 0.25);
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.search-logo{
+    position: absolute;
+    cursor: pointer;
+    bottom: 40%;
+    left: 2%;
+}
+.search-container{
+    position: relative;
+}
+
+a.tag-selected{
+    background-color: #FACD66;
+    color: #1D2123;
+}
+
+.collection-images>img{
+    width: 213px;
+    height: 234px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* end collection page */
