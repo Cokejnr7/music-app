@@ -14,7 +14,8 @@ from rest_framework import generics
 def home(request):
     songs = Song.objects.all()
     context = {
-        'songs': songs
+        'songs': songs,
+        'name': 'home'
     }
     
 
@@ -23,7 +24,8 @@ def home(request):
 def collections(request):
     collections = Collection.objects.all()
     context = {
-        "collections": collections
+        "collections": collections,
+        'name': 'playlist'
     }
     
     return render(request,'song/collections.html',context)
